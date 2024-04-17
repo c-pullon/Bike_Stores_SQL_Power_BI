@@ -88,7 +88,7 @@ INNER JOIN
 INNER JOIN 
     sys.types AS ty ON c.user_type_id = ty.user_type_id
 WHERE
-    t.name = 'brands' -- Specify the first table name here
+    t.name = 'brands' 
 
 UNION ALL
 
@@ -104,7 +104,7 @@ INNER JOIN
 INNER JOIN 
     sys.types AS ty ON c.user_type_id = ty.user_type_id
 WHERE
-    t.name = 'categories' -- Specify the second table name here
+    t.name = 'categories'
 
 UNION ALL
 
@@ -120,7 +120,7 @@ INNER JOIN
 INNER JOIN 
     sys.types AS ty ON c.user_type_id = ty.user_type_id
 WHERE
-    t.name = 'products' -- Specify the third table name here
+    t.name = 'products' 
 
 UNION ALL
 
@@ -136,5 +136,5 @@ INNER JOIN
 INNER JOIN 
     sys.types AS ty ON c.user_type_id = ty.user_type_id
 WHERE
-    t.name = 'stocks'; -- Specify the fourth table name here
+    t.name = 'stocks'; 
 
