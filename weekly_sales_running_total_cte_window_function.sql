@@ -16,10 +16,12 @@ SELECT
     order_year,
     order_week,
     weekly_revenue,
-    SUM(weekly_revenue) OVER (ORDER BY order_year, order_week) AS running_total_revenue
+    SUM(weekly_revenue) OVER (ORDER BY order_year, order_week) AS overall_running_total_revenue,
+    SUM(weekly_revenue) OVER (PARTITION BY order_year ORDER BY order_week) AS yearly_running_total_revenue
 FROM 
     WeeklyRevenue
 ORDER BY 
     order_year, order_week;
+
 
 
