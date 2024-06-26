@@ -103,6 +103,7 @@ EXEC GetSalesByDateRange @StartDate = '2017-01-01', @EndDate = '2017-12-31';
 These queries allowed me to understand revenue trends, pricing information, and top selling categories in the bike stores dataset. These insights helped to guide further exploration for visualisation and dashboard development in Power BI. 
 
 ## Dashboard development in Power BI
+
 ![dashboard screenshot](power_bi_screenshot.png)
 
 - Using the insights gained using SQL, further data analysis and visualisation is performed in Power BI to create an interactive dashboard highlighting key findings in the data.
@@ -111,4 +112,5 @@ These queries allowed me to understand revenue trends, pricing information, and 
 - Slicers are included to filter the data by time and product category.
 - Cards are included at the top of the dashboard highlighting KPIs including total revenue, quantity sold and total orders.
 - The dashboard has a minimised view to only show the line graph, which increases in size to better illustrate the sales trends.
+
 ![minimised view](minimised_view.png)
